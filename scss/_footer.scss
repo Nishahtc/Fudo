@@ -1,0 +1,27 @@
+
+.footer{
+    @media (min-width: 992px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .footer-heading {
+    font-size: $footer-heading-size;
+
+  }
+  .list-unstyled li{
+    margin-bottom: 14px;
+    
+  }
+
+  @media (min-width:992px) {
+    .footer p{
+      font-size: 14px;
+    }
+    .list-unstyled li a{
+      font-size: 14px;
+    }
+   
+    
+  }
+}
