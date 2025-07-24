@@ -11,14 +11,14 @@
         rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="./css/style.min.css?v=2">
+    <link rel="stylesheet" href="./css/style.min.css?v=2">
 </head>
 
 <body>
 
     <header class="sticky-top bg-white">
         <div class="container">
-            <nav class="navbar navbar-expand-md pt-44">
+            <nav class="navbar navbar-expand-md mt-44">
 
 
                 <a class="navbar-brand" href="#">
@@ -61,19 +61,19 @@
                     </ul>
 
                     <div class="d-flex align-items-center gap-3 position-relative">
-            
+
                         <a class="nav-link" href="#" id="searchIcon">
                             <img src="./images/search-icon.svg" alt="search-icon" />
                         </a>
 
-    
+
                         <div class=" position-absolute top-100 start-50  translate-middle-x  mt-3 d-none w-100 "
-                           id="searchBoxWrapper">
+                            id="searchBoxWrapper">
                             <input type="text" class="form-control rounded-pill px-4 py-2"
                                 placeholder="Search here..." />
-                                   <img src="./images/search-icon.svg" alt="send-icon " class="position-absolute top-50 end-15 translate-middle"
-                          >
-                                
+                            <img src="./images/search-icon.svg" alt="send-icon "
+                                class="position-absolute top-50 end-15 translate-middle">
+
                         </div>
 
                         <a class="nav-link p-0" href="#"><img src="./images/cart-icon.svg" alt="cart-icon" /></a>
@@ -88,58 +88,104 @@
             </nav>
         </div>
     </header>
-    <!-- <main>
-        <section class="hero-banner mt-108">
+    <main>
+        <section class="hero-banner ">
             <div class="container">
                 <div class="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row">
-                    <div class="col-md-6">
+                    <div class="col-md-7 mt-108">
                         <span class="rounded-pill bg-primary text-danger py-3 px-4">More than Faster <img
-                                src="./images/food-icon.svg" alt="food-icon" class="ms-2"></span>
-                        <h1 class="mt-44">Be The Fastest In Delivering Your Food</h1>
+                                src="./images/food-icon.svg" alt="food-icon" class="ms-2 cherry-icon"></span>
+                        <h1 class="mt-44 fw-bold">Be The Fastest In Delivering Your  <span class="text-danger">Food</span></h1>
                         <p class="fs-6 fw-semibold w-75">Our job is to filling your tummy with delicious food and with
                             fast and free delivery</p>
                         <a href="#" class="btn btn-danger rounded-pill fw-semibold py-3 px-4 fs-5">Get Started</a>
-                        <a href="#" id="watchVideoBtn" class="text-decoration-none text-black fw-semibold fs-6">
-                            <img src="./images/play-icon.svg" alt="video play">
-                            <span>Watch Video</span>
+
+                        <a href="#" 
+                            class="text-decoration-none text-black fw-medium fs-6" 
+                          >
+                            <img src="./images/play-icon.svg" alt="video play" class="m-0">
+                            Watch Video
                         </a>
 
-                        <div id="videoContainer" class="video-wrapper mt-4 d-none">
-                            <div class="ratio ratio-16x9">
-                                <iframe id="youtubeIframe" src="" title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
+
+                       
 
 
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-7 position-relative">
                         <img src="./images/banner-vector.svg" alt="banner-vector"
-                            class="position-absolute top-10 left-20">
-                        <img src="./images/hero-banner.webp" alt="" class="img-fluid">
-                        <div class="rounded-pill bg-white d-flex  p-3 w-70  position-absolute courier-card shadow">
+                            class="position-absolute top-10 start-10 rotate-hover">
+
+                        <img src="./images/hero-banner.webp" alt="" class="img-fluid ">
+
+                        <div class="rounded-pill bg-white d-flex  p-3 w-75  position-absolute z-n1 top-75 shadow ">
                             <img src="./images/Male_memojis.svg" alt="Male_memojis" class="me-4">
                             <strong> Richard Waston</strong>
+                            <p class="text-muted position-absolute start-n20  bottom-n2 fs-12">Food Courier</p>
 
                             <img src="./images/phone.svg" alt="phone" class="ms-5">
                         </div>
 
                         <div
-                            class="d-flex align-items-center  position-absolute bg-white shadow border p-3 zn-1 pizza-card">
-                            <img src="./images/banner-dish.svg" alt="dish-img">
+                            class="d-flex align-items-center  position-absolute bg-white w-50 shadow  p-1 z-n1 top-75  start-65 border">
+                            <img src="./images/banner-dish.svg" alt="dish-img" class="img-fluid me-3 ms-2">
                             <div>
-                                <p>Italian Pizza</p>
+                                <p class="pt-3 text-black fw-semibold">Italian Pizza</p>
                                 <img src="./images/star.svg" alt="star">
-                                <p>$ 7.49</p>
+                                <p class="text-black fw-semibold fs-6"><span class="text-danger">$</span>7.49</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main> -->
+
+        <section class="customer mt-90">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col position-relative d-flex">
+                        <img src="./images/customer1.webp" alt="customer1" class="position-relative z-3 ms-0  img-fluid">
+                        <img src="./images/customer2.webp" alt="customer2" class="position-relative z-2  ms-n12 img-fluid" >
+                        <img src="./images/customber3.webp" alt="customer3" class="position-relative z-1 ms-n12 img-fluid">
+
+                        <div class="position-relative ps-5">
+                            <p class="mb-0 fw-semibold text-black fs-6">Our Happy Customer</p>
+                            <span class="text-muted "><img src="./images/single-star.svg" alt="star" class="pe-1">
+                                 <span class="text-black fw-semibold">4,8</span class="text-gray-200 fs-12"> (10.2k Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="serve mt-lg-100 mt-80">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 mb-2">
+                       <div class="w-70 mx-auto text-center">
+                         <p class="text-danger fw-semibold fs-6">WHAT WE SERVE</p>
+                        <h2 class="fw-bold">Your Favorite Food Delivery Partner</h2>
+                       </div>
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-lg-between justify-content-center">
+                        <div class="col-md-4 col-12">
+                            <img src="./images/quality-vector.webp" alt="">
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img src="./images/quality-vector.webp" alt="">
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img src="./images/quality-vector.webp" alt="">
+                        </div>
+                       
+                      
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
     <footer class="footer my-lg-160 mb-lg-108  mb-90">
         <div class="container">
             <div class="row text-center text-lg-start justify-content-center justify-content-lg-between">
@@ -203,7 +249,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

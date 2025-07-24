@@ -1,21 +1,26 @@
-.hero-banner{
-    .courier-card {
-   top: 75%;
-    z-index: -1;
+.hero-banner {
+    .border {
+        border-radius: 20%;
     }
-    .pizza-card {
-     top: 75%;
-     left: 65%;
-    z-index: -1;
+    .fs-12{
+        font-size: 0.75rem;
     }
 
-    .w-70{
-        width: 70%;
+    .rotate-hover {
+        transition: transform 0.5s ease-in-out;
     }
-   .border{
-   
-    border-radius: 20%;
-   }
+
+    .rotate-hover:hover {
+        transform: rotate(360deg);
+    }
+    .cherry-icon {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cherry-icon:hover {
+   transform: scale(1.1) translateY(-5px);
+}
 
 
 }

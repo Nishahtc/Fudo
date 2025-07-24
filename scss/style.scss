@@ -1,7 +1,7 @@
 $gray-100:#F8F9FA;
-$gray-200:#e9ecef;
+$gray-200:#6f6f6f;
 $primary:#FFB6B6;
-
+$black:#263238;
 
 
 
@@ -10,12 +10,13 @@ $custom-container-max-widths: (
   xxl:1216px,  
 );
 
-
+$grid-columns: 14;
 
 
 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+$enable-negative-margins: true;
 
 
 $nav-link-color: #333;
@@ -47,9 +48,12 @@ $spacers: (
 );
 
 $custom-spacers: (
+  12:0.75rem,
   14:14px,
   44:2.75rem,
   90:90px,
+  80:80px,
+  100:100px,
   108:108px,
   127:100px,
   160px:160px,   
@@ -60,7 +64,7 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 $zindex-levels: (
  n1:-1,
-  3: 10
+  
 );
 $custom-zindex-levels:(
   n2: -2,
@@ -72,16 +76,22 @@ $custom-zindex-levels:(
 $zindex-levels: map-merge($map1: $zindex-levels, $map2: $custom-zindex-levels );
 
 $custom-position-values: (
+  8:8px,
  10:10%,
  15:15%,
- 50:50%,
- 20:-50%,
+ n2:2px,
+ n20:20%,
+ n30:30px,
+ n50:-50px,
+ 65:65%,
+ 75:75%,
+
 ) ;
 
 $position-values: map-merge($map1: $position-values, $map2: $custom-position-values );
 // font-size
 $h1-font-size:                $font-size-base * 4.5;
-$h2-font-size:                $font-size-base * 3.75;
+$h2-font-size:                $font-size-base * 2.813;
 $h3-font-size:                $font-size-base * 2.25;
 $h4-font-size:                $font-size-base * 1.5;
 $h5-font-size:                $font-size-base * 1.25;
@@ -104,7 +114,9 @@ $nav-link-font-size: 1.125rem;
 
 // $navbar-toggler-focus-box-shadow: none;
 $navbar-nav-link-padding-y: 0.75rem;
-
+.w-70{
+  width: 70%;
+}
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import './header';
 @import './footer';
