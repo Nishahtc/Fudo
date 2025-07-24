@@ -11,6 +11,12 @@
   }
   .list-unstyled li{
     margin-bottom: 14px;
+    a{
+      font-size: 14px;
+    }
+    &:hover{
+      color: $primary;
+    }
     
   }
 
@@ -18,10 +24,17 @@
     .footer p{
       font-size: 14px;
     }
-    .list-unstyled li a{
-      font-size: 14px;
-    }
-   
     
+
+    
+   
   }
+  .social-icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: brightness(1.2);
+  }
+}
 }

@@ -49,6 +49,7 @@ $spacers: (
 $custom-spacers: (
   14:14px,
   44:2.75rem,
+  90:90px,
   108:108px,
   127:100px,
   160px:160px,   
@@ -73,7 +74,8 @@ $zindex-levels: map-merge($map1: $zindex-levels, $map2: $custom-zindex-levels );
 $custom-position-values: (
  10:10%,
  15:15%,
- 50:50%
+ 50:50%,
+ 20:-50%,
 ) ;
 
 $position-values: map-merge($map1: $position-values, $map2: $custom-position-values );
