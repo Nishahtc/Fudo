@@ -1,123 +1,186 @@
-$gray-100:#F8F9FA;
-$gray-200:#6f6f6f;
-$primary:#FFB6B6;
-$black:#263238;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Colors
+$primary: #FFB6B6;
+$light-pink:#FFDDCC40;
+$black: #263238;
+$yellow:#f2c94c;
+$gray-200: #6f6f6f;
+
+// Font
+$font-family-base: "Poppins", sans-serif;
 
 
 
-// container
-$custom-container-max-widths: (
-  xxl:1216px,  
+// Custom theme colors
+$custom-theme-colors: (
+  "gray-200": $gray-200,
+  "yellow":$yellow,
+
 );
 
-$grid-columns: 14;
+// Container
+$custom-container-max-widths: (
+  xxl: 1216px
+);
 
-
-
+// Import Bootstrap functions & variables 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+
+// Merge theme colors
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// Enable negative margins
 $enable-negative-margins: true;
 
-
+// Navigation
 $nav-link-color: #333;
 $nav-link-hover-color: $danger;
 $nav-link-font-weight: 500;
 $nav-padding-y: 1rem;
 $nav-item-gap: 2rem;
-$footer-heading-size: 1.25rem; // 20px  
-$footer-heading-size-sm: 1.125rem; // 18px
-$footer-item-size-sm: 0.875rem;    // 14px
 
+// Footer text sizes
+$footer-heading-size: 1.25rem;      // 20px
+$footer-heading-size-sm: 1.125rem;  // 18px
+$footer-item-size-sm: 0.875rem;     // 14px
 
+// Merge custom container widths
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
 
-
-
-// map merge
-$container-max-widths: map-merge($map1: $container-max-widths, $map2: $custom-container-max-widths);
-
-
-
+// Bootstrap default spacers
 $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
+  5: $spacer * 3
+);
+
+// Custom spacers
+$custom-spacers: (
+  12: 0.75rem,
+  14: 14px,
+  20: 1.25rem,
+  24: 1.5rem,
+  33:33px,
+  44: 2.75rem,
+  50:50px,
+  55:55px,
+  60:60px,
+  80: 80px,
+  85:85px,
+  90: 90px,
+  93:93px,
+  100: 100px,
+  108: 108px,
+  127: 120px,
+  150:150px,
+  160:160px
   
 );
 
-$custom-spacers: (
-  12:0.75rem,
-  14:14px,
-  44:2.75rem,
-  90:90px,
-  80:80px,
-  100:100px,
-  108:108px,
-  127:100px,
-  160px:160px,   
-);
-
-// Merge custom spacers with Bootstrap default
+// Merge custom spacers
 $spacers: map-merge($spacers, $custom-spacers);
 
+// Z-index levels
 $zindex-levels: (
- n1:-1,
-  
+  n1: -1
 );
-$custom-zindex-levels:(
+$custom-zindex-levels: (
   n2: -2,
   n5: -5,
-  
-
+  z10:10,
 );
+$zindex-levels: map-merge($zindex-levels, $custom-zindex-levels);
 
-$zindex-levels: map-merge($map1: $zindex-levels, $map2: $custom-zindex-levels );
-
+// Position values
 $custom-position-values: (
-  8:8px,
- 10:10%,
- 15:15%,
- n2:2px,
- n20:20%,
- n30:30px,
- n50:-50px,
- 65:65%,
- 75:75%,
-
-) ;
-
-$position-values: map-merge($map1: $position-values, $map2: $custom-position-values );
-// font-size
-$h1-font-size:                $font-size-base * 4.5;
-$h2-font-size:                $font-size-base * 2.813;
-$h3-font-size:                $font-size-base * 2.25;
-$h4-font-size:                $font-size-base * 1.5;
-$h5-font-size:                $font-size-base * 1.25;
-$h6-font-size:                $font-size-base * 0.875;
-$h7-font-size:                $font-size-base ;
-
-
-$cuctom_font-size: (
-    7: $h7-font-size
-   
+  8: 8px,
+  10: 10%,
+  16:16%,
+  15: 15%,
+  20: 20px,
+  33:33px,
+  40:40%,
+  42: 42%,
+  55:55%,
+  45:45px,
+  65: 65%,
+  n2: 2px,
+  n20: 20%,
+  n22: 22px,
+  n30: -30px,
+  n35: -35px,
+  n50: -50px,
+  n60:-60%,
+  77: 77%,
+  85: 85%,
 );
-$font-sizes: map-merge($map1: $font-sizes, $map2: $cuctom_font-size);
 
+$position-values: map-merge($position-values, $custom-position-values);
 
+// Font sizes
+$h1-font-size: $font-size-base * 4.5;
+$h2-font-size: $font-size-base * 2.813;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 0.875;
+$h7-font-size: $font-size-base *1.125;
 
+// Custom font size map
+$custom-font-size: (
+  7: $h7-font-size
+);
 
+$font-sizes: map-merge($font-sizes, $custom-font-size);
 
-// nav-items
+// Navbar
 $nav-link-font-size: 1.125rem;
-
-// $navbar-toggler-focus-box-shadow: none;
 $navbar-nav-link-padding-y: 0.75rem;
-.w-70{
-  width: 70%;
-}
+
+
+
+
+// Import Bootstrap and your SCSS partials
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 @import './header';
 @import './footer';
-@import './bannerSection'
+@import './bannerSection';
+@import './menu'; 
+@import './customer';
+@import './about';
+
+// Custom utilities
+.w-70 {
+  width: 70%;
+}
+
+.fs-12{font-size: 0.75rem;}
+.border-30{border-radius: 30px;}
+@media (min-width:992px){
+  .ms-lg-col-n1{margin-left: -8.333%;}
+  .w-lg-60{width: 60%;}
+
+}
+
+  .icon {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+   transform: scale(1.1) translateY(-5px);
+}
+.btn{
+  border: none;
+}
+

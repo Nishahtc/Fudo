@@ -1,11 +1,19 @@
 .hero-banner {
-    .border {
-        border-radius: 20%;
+    h1{
+        font-size: 3rem !important;
+        @media(min-width:992px){
+            font-size: 60px !important;
+        }
+        @media (min-width:1200px) {
+            font-size: $h1-font-size !important;
+            
+        }
+        @media (min-width:768px) {
+            font-size: 50px;
+            
+        }
     }
-    .fs-12{
-        font-size: 0.75rem;
-    }
-
+    
     .rotate-hover {
         transition: transform 0.5s ease-in-out;
     }
@@ -21,6 +29,8 @@
 .cherry-icon:hover {
    transform: scale(1.1) translateY(-5px);
 }
+
+
 
 
 }
