@@ -163,7 +163,7 @@ $navbar-nav-link-padding-y: 0.75rem;
 .w-70 {
   width: 70%;
 }
-
+.border-30{border-radius: 30px;}
 .fs-12{font-size: 0.75rem;}
 .border-30{border-radius: 30px;}
 @media (min-width:992px){
@@ -186,6 +186,24 @@ $navbar-nav-link-padding-y: 0.75rem;
 @media (min-width: 992px) {
   .position-lg-absolute {
     position: absolute !important;
+    
   }
+  .top-560{
+    top:540px !important;
+  }
+  
+  .bottom-50{bottom:50px !important;}
+  .right-20{
+    right: 20px;
+  }
+ 
+
 }
+@media(min-width:1200px){
+  .top{
+    bottom: -70px;
+  }
+
+}
+
 
