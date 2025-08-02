@@ -163,6 +163,12 @@ $navbar-nav-link-padding-y: 0.75rem;
 .w-70 {
   width: 70%;
 }
+.w-lg-75{
+  @media (min-width:993px) {
+    width: 75% !important;
+    
+  }
+}
 .border-30{border-radius: 30px;}
 .fs-12{font-size: 0.75rem;}
 .border-30{border-radius: 30px;}

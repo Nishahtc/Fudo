@@ -1,13 +1,19 @@
-.customer{
-  @media (max-width:423px) {
-    p{
-      font-size: 14px;
-      font-weight: 400;
+.customer {
+  .img-group {
+    display: flex;
+    flex-direction: row; 
+
+    @media (min-width: 441px) {
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 0.5rem;
     }
-    span{
-      font-size: 10px,;
+
+    img {
+      width: 40px;
+      height: auto;
     }
-    
   }
 }
+
 
